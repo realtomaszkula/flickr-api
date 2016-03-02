@@ -1,1 +1,8 @@
-<h1>Results</h1>
+<div class="container">
+  <% @groups_of_two_url.each do |group_of_two| %>
+    <div class="row">
+     <div class="col-md-2"> <%= image_tag("#{group_of_two.first}", :size => '150x150' ) %> </div>
+      <div class="col-md-2"> <%= image_tag("#{group_of_two.last}", :size => '150x150' ) %></div>
+    </div>
+  <% end %>
+</div>

@@ -8,7 +8,7 @@ class StaticController < ApplicationController
   def search
     if params.has_key?(:search)
       urls = get_urls(photos_for(params[:search][:id]))
-      groups_of_two =  urls.in_groups_of(2)
+      @groups_of_two_url =  urls.in_groups_of(2)
     end
   end
 
