@@ -1,12 +1,10 @@
 class StaticController < ApplicationController
-  before_action :set_keys, only: [:search, :recent]
+  before_action :set_keys, only: [:home, :search, :recent]
 
   def home
-
   end
 
   def search
-
   end
 
   def recent
