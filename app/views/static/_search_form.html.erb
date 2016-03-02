@@ -1,5 +1,5 @@
 <h1>Form</h1>
-<%= form_for :static, url: root_path do |f| %>
+<%= form_for :search, url: search_path, method: 'get' do |f| %>
 
 <%= f.label :id, 'User ID' %>
 <%= f.text_field :id, class: 'form-control' %>
